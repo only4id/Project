@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="inner">
+            <header>
+                <p><a href="#"><img src="img/logo.png" alt="logo"></a></p>
+                <button id="login">Login</button>
+                <nav>
+                    <ul>
+                        <li><a href="#">Escuela</a>
+                            <ul class="sub">
+                                <li><a href="#">Presentación</a></li>
+                                <li><a href="#">Reseña Histórica</a></li>
+                                <li><a href="#">Misión y Visión</a></li>
+                                <li><a href="#">Acreditaciones y Licenciamiento</a></li>
+                                <li><a href="#">Convenios</a></li>
+                                <li><a href="#">Directorio</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="#">Programa de Estudio</a>
+                            <ul class="sub">
+                                <li><a href="#">Educación Física</a></li>
+                                <li><a href="#">Educación Primaria</a></li>
+                                <li><a href="#">Educación Inicial</a></li>
+                                <li><a href="#">Computación e Informática</a></li>
+                                <li><a href="#">Especialidad de Idiomas: Ingles</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Gestión Académica</a>
+                            <ul class="sub">
+                                <li><a href="#">Servicios Exclusivos</a>
+                                    <ul>
+                                        <li><a href="#">Matrícula</a></li>
+                                        <li><a href="#">Traslado</a></li>
+                                        <li><a href="#">Convalidación</a></li>
+                                        <li><a href="#">Licencia de Estudios</a></li>
+                                        <li><a href="#">Reincorporación</a></li>
+                                        <li><a href="#">Grados y Títulos</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Servicios de Oficio</a>
+                                    <ul>
+                                        <li><a href="#">Subsanación</a></li>
+                                        <li><a href="#">Retiro</a></li>
+                                        <li><a href="#">Certificado de estudio</a></li>
+                                        <li><a href="#">Títulos Profesionales</a></li>
+                                        <li><a href="#">Modalidades de Obtención de Títulos</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Servicios Internos</a></li>
+                                <li><a href="#">Servicios Online</a>
+                                    <ul>
+                                        <li><a href="#">Aula Virtual</a></li>
+                                        <li><a href="#">Biblioteca Digital</a></li>
+                                        <li><a href="#">Grados y Títulos</a></li>
+                                        <li><a href="#">Repositorio Digital de Investigaciones</a></li>
+                                        <li><a href="#">Módulo de Egresado</a></li>
+                                        <li><a href="#">Intranet</a></li>
+                                        <li><a href="#">Galería de imágenes</a></li>
+                                        <li><a href="#">Música</a></li>
+                                        <li><a href="#">CEPREP 2021</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Proceso de Admisión</a></li>
+                        <li><a href="#">Comunicados</a>
+                            <ul class="sub">
+                                <li><a href="#">Convocatorias</a></li>
+                                <li><a href="#">Publicaciones</a></li>
+                                <li><a href="#">Bolsa de Trabajo</a></li>
+                                <li><a href="#">Noticias</a></li>
+                                <li><a href="#">Eventos</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Transparencia</a></li>
+                        <li><a href="#">Investigación</a></li>
+                        <li><a href="#">Egresados</a></li>
+                        <li><a href="#">Servicios</a>
+                            <ul class="sub">
+                                <li><a href="">Plataforma EVA</a></li>
+                                <li><a href="">Sistema de Administración Académica (SIA)</a></li>
+                                <li><a href="">Biblioteca Virtual</a></li>
+                                <li><a href="">Repositorio Digital</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="contents">
+                <div class="slide">
+                    <ul>
+                        <li><a href="#"><img src="img/main.png" alt="directorio"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal"></div>
+            <div class="login">
+                <p><h3>¡Bienvenidos!</h3></p>
+                <div class="inputA">Por favor, introduzca su nombre de usuario.</div>
+                <div class="inputA">Introduzca una contraseña.</div>
+                <div class="btnLogin">iniciar sesión</div>
+                <div class="btn">unirse a la membresía</div>
+                <div class="btn">No se identificación y contraseña</div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let login = document.querySelector("#login");
+        let modal = document.querySelector(".modal");
+        let loginBox = document.querySelector(".login");
+        login.addEventListener("click", function(){
+            modal.style.display="block";
+            loginBox.style.display="block";
+        })
+    </script>
+    
+</body>
+</html>
